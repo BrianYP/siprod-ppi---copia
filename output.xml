@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.1 on win32)" generated="20240523 15:31:35.729" rpa="false" schemaversion="4">
+<suite id="s1" name="Button" source="c:\Users\Brahyan\Desktop\siprod ppi - copia\backend\robot\elements\button.robot">
+<test id="s1-t1" name="Right Click Test" line="12">
+<kw name="Abrir el Navegador Hacia la Página">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240523 15:31:36.475" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/buttons'.</msg>
+<msg timestamp="20240523 15:31:36.544" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240523 15:31:36.546" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20240523 15:31:36.472" endtime="20240523 15:31:36.559"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240523 15:31:36.560" endtime="20240523 15:31:36.561"/>
+</kw>
+<status status="FAIL" starttime="20240523 15:31:36.472" endtime="20240523 15:31:36.561"/>
+</kw>
+<kw name="Double Click Element" library="SeleniumLibrary">
+<arg>id=doubleClickBtn</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240523 15:31:36.562" endtime="20240523 15:31:36.563"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240523 15:31:36.566" endtime="20240523 15:31:36.567"/>
+</kw>
+<kw name="Simulate Right Click">
+<arg>${right_click_locator}</arg>
+<status status="NOT RUN" starttime="20240523 15:31:36.569" endtime="20240523 15:31:36.570"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240523 15:31:36.571" endtime="20240523 15:31:36.571"/>
+</kw>
+<kw name="Hacer Clic en el Botón">
+<status status="NOT RUN" starttime="20240523 15:31:36.572" endtime="20240523 15:31:36.573"/>
+</kw>
+<status status="FAIL" starttime="20240523 15:31:36.465" endtime="20240523 15:31:36.574">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<status status="FAIL" starttime="20240523 15:31:35.747" endtime="20240523 15:31:36.578"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Button">Button</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
